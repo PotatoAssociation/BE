@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="nk_logo.png"/>
+    <link rel="apple-touch-icon" href="nk_logo.png"/>
+    <title>신고 완료된 게시물</title>
+    <link rel="stylesheet" href="reportEshow.css">
+    <script src="/css/reportEshow.js" defer></script> <!-- JavaScript 분리 -->
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 헤더 -->
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <img src = "nk_logo.png"  class="logo left"><a href="/" class="title_logo left">nature keeper</a>
+                    <li><a href="login">로그인</a></li>
+                    <li><a href="mypage">마이페이지</a></li>
+                    <li><a href="report">신고하기</a></li>
+                    <li><a href="edu">소식</a></li>
+                    <li><a href="reward">포인트 교환</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content-container">
+            <!-- 사이드바 -->
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <div class="sidebar-header"><h4>신고 완료</h4></div>
+                        <li><a href="report">신고하기</a></li>
+                        <li><a href="reportE">신고 완료</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- 메인 컨텐츠 -->
+            <main class="report-content">
+                <a href="reportE" class="back_button"> &lt;게시글 목록</a>
+                <div id="wrap">
+                    <div id="conArea">
+                        <div class="outInner">
+                            <div id="contents">
+                                <h2>게시글 내용</h2>
+                                <table class="content_table_wrap">
+                                    <colgroup>
+                                        <col style="width: 120px;">
+                                        <col style="width: auto">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">제목</th>
+                                            <td class="left" id="post-title"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">작성자</th>
+                                            <td class="left" id="post-author"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">등록일</th>
+                                            <td class="left" id="post-date"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">좋아요</th>
+                                            <td class="left">
+                                                <svg xmlns="http://www.w3.org/2000/svg" id="like" viewBox="0 0 512 512">
+                                                    <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/>
+                                                </svg>
+                                                <span id="like-count"></span>
+                                            </td>
+                                            
+                                            
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">내용</th>
+                                            <td class="left" id="post-content"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">사진</th>
+                                            <td class="left"><img src="" id="post-image" class="report_img"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- 푸터 -->
+        <footer>
+            <div class="container">
+                <section class="contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:support@환경지킴이.com">support@환경지킴이.com</a></p>
+                    <p>Github: <a href="https://github.com/PotatoAssociation">PotatoAssociation Github</a></p>
+                </section>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

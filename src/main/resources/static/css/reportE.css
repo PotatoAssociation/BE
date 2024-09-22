@@ -1,0 +1,190 @@
+/* 전체 레이아웃 및 스타일 */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 80px;
+    background-color: #f4f4f4;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-container {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+/* 상단바 스타일 */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    position: relative;
+    background-color: #6cb26f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    align-items: center;
+}
+
+.title_logo {
+    margin-left: 10px;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.nav-links {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links li a {
+    margin: 0px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #1c8b49;
+}
+
+/* 사이드바 스타일 */
+.sidebar {
+    width: 15%;
+    background-color: #e0e0e0;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 1.2rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 0.8rem;
+}
+
+.sidebar ul li a {
+    font-size: 1rem;
+    display: block;
+    padding: 0.8rem;
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* 메인 콘텐츠 스타일 */
+.report-content {
+    width: 80%;
+    padding: 0 2rem;
+}
+
+.report-content h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.search-bar input[type="date"],
+.search-bar select,
+.search-bar button {
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+}
+
+/* 신고 완료된 게시물 테이블 */
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.report-table th, .report-table td {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: left;
+}
+
+.report-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* 푸터 스타일 */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .contact a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer .contact a:hover {
+    text-decoration: underline;
+}

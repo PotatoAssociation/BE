@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>환경 문제 신고</title>
+    <link rel="stylesheet" href="/css/report.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 헤더 -->
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <img src = "nk_logo.png"  class="logo left"><a href="/" class="title_logo left">nature keeper</a>
+                    <li><a href="login">로그인</a></li>
+                    <li><a href="mypage">마이페이지</a></li>
+                    <li><a href="report">신고하기</a></li>
+                    <li><a href="edu">소식</a></li>
+                    <li><a href="reward">포인트 교환</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content-container">
+            <!-- 사이드바 -->
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <div class="sidebar-header"><h4>신고합니다</h4></div>
+                        <li><a href="report">신고하기</a></li>
+                        <li><a href="reportE">신고 완료</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- 메인 컨텐츠 -->
+            <main class="report-content">
+                <h1>환경 문제 신고</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="region">발견한 구역</label>
+                        <select id="region">
+                            <option>구역을 선택하세요</option>
+                            <option value="중구">중구</option>
+                            <option value="수성구">수성구</option>
+                            <option value="달서구">달서구</option>
+                            <option value="북구">북구</option>
+                            <option value="서구">서구</option>
+                            <option value="동구">동구</option>
+                            <option value="남구">남구</option>
+                            <option value="달성군">달성군</option>
+                            <option value="기타">기타</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">발견한 장소</label>
+                        <input type="text" id="location" placeholder="예: 경북대학교 북문 앞">
+                    </div>
+                    <div class="form-group">
+                        <label for="file-upload">상황 사진 업로드</label>
+                        <input type="file" id="file-upload">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">상황 설명 (선택 사항)</label>
+                        <textarea id="description" placeholder="상황에 대한 설명을 입력하세요..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">신고하기</button>
+                </form>
+            </main>
+        </div>
+
+        <!-- 푸터 -->
+        <footer>
+            <div class="container">
+                <section class="contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:support@환경지킴이.com">support@환경지킴이.com</a></p>
+                    <p>Github: <a href="https://github.com/PotatoAssociation">PotatoAssociation Github</a></p>
+                </section>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* nav 내부를 flex로 설정 */
+nav {
+    position: relative;
+    background-color: #6cb26f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* 왼쪽, 오른쪽 배치 */
+    /*width: 100%;  nav가 헤더 전체를 차지하게 설정 */
+    align-items: center;
+}
+
+
+/* 로고 스타일 */
+.logo {
+    width: 50px;
+    height: auto;
+    align-items: center;
+}
+
+
+/* 제목 스타일 */
+.title_logo {
+    margin-left: 10px;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    flex-wrap:wrap;
+    text-decoration: none;
+    flex-grow:1;
+    justify-content: flex-start;
+}
+
+
+
+/* 메뉴를 오른쪽 끝으로 배치 */
+.nav-links {
+    width: 100%;
+    display: flex;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links li a {
+    margin:0px 10px; /* 메뉴 항목 간 간격 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: white; /* 링크 텍스트 색상 */
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #1c8b49; 
+}
+
+/* 메인 섹션 스타일 */
+.main {    
+    top: 0;
+    margin: 0;
+    margin-top: 80px;
+    position: relative;
+    background-repeat: round;
+    background-image: url("main_background.jpg");
+
+    word-break: keep-all;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    background: url('background.jpg') no-repeat center center/cover;
+}
+
+.hero h1 {
+    position: relative;
+    margin: 10px 0px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 10px 0px 20px 0px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;    
+}
+
+.hero-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #45a049;
+}
+
+/* 기능 소개 섹션 */
+.features {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.features h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.feature-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color : rgba(255, 255, 255, 0.85);
+    width: 250px;
+    text-align: center;
+    margin-bottom:50px;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* 푸터 스타일 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0px;
+}

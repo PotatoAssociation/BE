@@ -1,0 +1,139 @@
+/* header 전체 스타일 */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+/* body 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* 배경을 흰색으로 설정 */
+}
+
+/* nav 내부를 flex로 설정 */
+nav {
+    position: relative;
+    background-color: #6cb26f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* 왼쪽, 오른쪽 배치 */
+    align-items: center;
+}
+
+/* 로고 스타일 */
+.logo {
+    width: 50px;
+    height: auto;
+    align-items: center;
+}
+
+/* 제목 스타일 */
+.title_logo {
+    margin-left: 10px;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+/* 메뉴를 오른쪽 끝으로 배치 */
+.nav-links {
+    width: 100%;
+    display: flex;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links li a {
+    margin: 0px 10px; /* 메뉴 항목 간 간격 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: white; /* 링크 텍스트 색상 */
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #1c8b49; 
+}
+
+/* 메인 섹션 스타일 */
+.profile-main {    
+    margin-top: 100px; /* 상단바가 fixed이므로, 아래에 공간을 줌 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* 화면 높이에 맞게 */
+    background-color: #ffffff; /* 마이페이지 배경을 흰색으로 설정 */
+    word-break: keep-all;
+}
+
+/* 프로필 섹션 */
+.profile-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.profile-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.info-group label {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.info-group span {
+    color: #333;
+}
+
+/* 로그아웃 버튼 스타일 */
+.logout-btn {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-block; /* a 태그를 버튼처럼 보이게 설정 */
+}
+
+.logout-btn:hover {
+    background-color: #45a049;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

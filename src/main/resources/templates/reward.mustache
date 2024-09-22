@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트 교환 페이지</title>
+    <link rel="stylesheet" href="/css/reward.css">
+    <link rel="icon" href="nk_logo.png"/>
+    <link rel="apple-touch-icon" href="nk_logo.png"/>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <nav>
+            <img src="nk_logo.png" class="logo left">
+            <a href="/" class="title_logo">nature keeper</a>
+            <ul class="nav-links">
+                <li><a href="login">로그인</a></li>
+                <li><a href="mypage">마이페이지</a></li>
+                <li><a href="report">신고하기</a></li>
+                <li><a href="edu">소식</a></li>
+                <li><a href="reward">포인트 교환</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 메인 섹션 -->
+    <div class="main">
+        <div class="hero">
+            <h1>포인트로 보상을 교환하세요!</h1>
+            <p>적립된 포인트로 지역 상점 할인 쿠폰, 친환경 상품 등 다양한 보상을 받을 수 있습니다.</p>
+            <p>보유 포인트: <strong>3500P</strong></p>
+        </div>
+
+        <!-- 교환 가능한 상품 섹션 -->
+        <div class="features">
+            <h2>교환 가능한 상품</h2>
+            <div class="feature-cards">
+                <!-- 첫 번째 상품 카드 -->
+                <div class="feature-card">
+                    <h3>지역 상점 할인 쿠폰</h3>
+                    <p>2000P</p>
+                    <p>지역 상점에서 사용할 수 있는 할인 쿠폰을 교환하세요!</p>
+                    <button class="exchange-btn" onclick="openPopup(2000, '지역 상점 할인 쿠폰')">교환하기</button>
+                </div>
+                
+                <!-- 두 번째 상품 카드 -->
+                <div class="feature-card">
+                    <h3>친환경 텀블러</h3>
+                    <p>3000P</p>
+                    <p>재활용 가능한 친환경 텀블러로 환경 보호에 동참하세요.</p>
+                    <button class="exchange-btn" onclick="openPopup(3000, '친환경 텀블러')">교환하기</button>
+                </div>
+                
+                <!-- 세 번째 상품 카드 -->
+                <div class="feature-card">
+                    <h3>에코백</h3>
+                    <p>1500P</p>
+                    <p>가볍고 튼튼한 에코백으로 불필요한 비닐 사용을 줄여보세요.</p>
+                    <button class="exchange-btn" onclick="openPopup(1500, '에코백')">교환하기</button>
+                </div>
+                
+                <!-- 네 번째 상품 카드 -->
+                <div class="feature-card">
+                    <h3>친환경 샴푸바</h3>
+                    <p>2500P</p>
+                    <p>플라스틱 없는 친환경 샴푸바로 환경을 보호하세요.</p>
+                    <button class="exchange-btn" onclick="openPopup(2500, '친환경 샴푸바')">교환하기</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h3>결제 내역</h3>
+            
+            <!-- 선택한 상품 정보 -->
+            <p id="popup-item">상품: 지역 상점 할인 쿠폰</p>
+            
+            <!-- 교환할 포인트 -->
+            <p id="popup-points">총 결제 포인트: 2000P</p>
+            
+            <!-- 사용 가능한 포인트 정보 -->
+            <p id="remaining-points">보유 포인트: 3500P</p>
+            <p id="remaining-after">교환 후 잔여 포인트: 1500P</p>
+            
+            <!-- 결제 확인 문구 -->
+            <p>해당 상품으로 교환하시겠습니까?</p>
+            
+            <!-- 버튼 -->
+            <button onclick="closePopup()">취소</button>
+            <button onclick="confirmExchange()">최종 결제</button>
+        </div>
+    </div>
+    
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="container">
+            <section class="contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:support@환경지킴이.com">support@환경지킴이.com</a></p>
+                <p>Github: <a href="https://github.com/PotatoAssociation">PotatoAssociation Github</a></p>
+            </section>
+        </div>
+    </footer>
+
+    <script src="/js/reward.js"></script>
+</body>
+</html>

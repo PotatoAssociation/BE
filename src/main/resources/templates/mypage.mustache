@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <link rel="stylesheet" href="/css/mypage.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="nav-links">
+            <img src="nk_logo.png" class="logo left">
+            <a href="/" class="title_logo left">nature keeper</a>
+            <li><a href="/login">로그인</a></li>
+            <li><a href="/mypage">마이페이지</a></li>
+            <li><a href="/report">신고하기</a></li>
+            <li><a href="/edu">소식</a></li>
+            <li><a href="/reward">포인트 교환</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="profile-main">
+    <div class="profile-container">
+        <h1>내 프로필</h1>
+        <div class="profile-info">
+            <div class="info-group">
+                <label>닉네임:</label>
+                <span>{{username}}</span>
+            </div>
+            <div class="info-group">
+                <label>이메일:</label>
+                <span>{{email}}</span>
+            </div>
+            <div class="info-group">
+                <label>포인트:</label>
+                <span>{{points}}</span>
+            </div>
+        </div>
+        <a href="/logout" class="logout-btn">로그아웃</a>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <section class="contact">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:support@환경지킴이.com">support@환경지킴이.com</a></p>
+            <p>Github: <a href="https://github.com/PotatoAssociation">PotatoAssociation Github</a></p>
+        </section>
+    </div>
+</footer>
+</body>
+</html>
